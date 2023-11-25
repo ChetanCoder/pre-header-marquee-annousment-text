@@ -1,0 +1,25 @@
+<div class="custom-marquee-annousment" role="region" {{ block.shopify_attributes }}>
+    {%- if section.settings.text != blank -%}
+      {%- if section.settings.link != blank -%}
+        <a href="{{ section.settings.link }}" class="">
+      {%- endif -%}
+          <div class="track ">
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            <span class="content marquee-annousment-text">{{ section.settings.text | escape }}</span>
+            {%- if section.settings.link != blank -%}
+              {% render 'icon-arrow' %}
+            {%- endif -%}
+          </div>
+          {%- if section.settings.link != blank -%}
+        </a>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
