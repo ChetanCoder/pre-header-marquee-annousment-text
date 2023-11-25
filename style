@@ -1,0 +1,32 @@
+<style>
+  .custom-marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 43px;
+    overflow-x: hidden;
+    background:{{section.settings.colorBackground}}; 
+    color:{{section.settings.colorText}}; 
+  }
+  .custom-marquee a {
+    color:{{section.settings.colorText}}; 
+  }
+  .custom-marquee .track {
+      position: absolute;
+      bottom: 6px;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee 7s linear infinite;
+  }
+  .custom-marquee .content {
+    margin-left: 40px;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-20%);
+    }
+  }
+</style>
