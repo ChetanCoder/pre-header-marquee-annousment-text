@@ -1,0 +1,9 @@
+<script>
+var marquees = document.getElementsByClassName("marquee-annousment-text");
+for (let i = 0; i < marquees.length; i++) {
+  let str = marquees.item(i).innerHTML;
+  let improvedText = str.replaceAll("|", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+  console.log(improvedText)
+  marquees.item(i).innerHTML = improvedText
+}
+</script>
